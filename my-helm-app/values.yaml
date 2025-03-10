@@ -7,3 +7,7 @@ service:
   port: 80
 serviceAccount:
   create: false
+ingress:
+  enabled: false
+  className: "nginx"
+  host: "my-app.local"
