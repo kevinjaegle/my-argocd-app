@@ -11,3 +11,8 @@ ingress:
   enabled: false
   className: "nginx"
   host: "my-app.local"
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
